@@ -2,12 +2,16 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
-
+# this is a comment
 # Create your views here.
+
+
 def index(request):
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("login"))
+
     return render(request, "users/user.html")
+
 
 def login_view(request):
     if request.method == "POST":
@@ -23,6 +27,7 @@ def login_view(request):
             })
     else:
         return render(request, "users/login.html")
+
 
 def logout_view(request):
     logout(request)
