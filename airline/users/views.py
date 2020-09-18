@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.urls import reverse
 # this is a comment
 # Create your views here.
-# addded 2comment
 
 
 def index(request):
