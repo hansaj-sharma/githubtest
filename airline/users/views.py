@@ -2,10 +2,11 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
-
+# this is a comment
 # Create your views here.
 # adding dumb comment
 # this should be testing
+# online pull test 
 
 
 def index(request):
